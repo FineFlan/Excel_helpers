@@ -1,0 +1,34 @@
+# --- Project Specific ---
+# Exclude the requested folder
+test/
+
+# --- Environment Variables ---
+# Never commit credentials or sensitive API keys
+.env
+.env.*
+!.env.example
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --- FastAPI / Web Frameworks ---
+# If you are using local SQLite databases for testing
+*.sqlite
+*.sqlite3
+
+# --- IDE / Editor Settings ---
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# --- Logs ---
+*.log
